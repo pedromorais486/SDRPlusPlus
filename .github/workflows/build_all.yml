@@ -1,12 +1,6 @@
 name: Build Binaries
 
-on:
-    push:
-        branches-ignore:
-        - nightly
-    pull_request:
-        branches-ignore:
-        - nightly
+on: [push, fork]
 
 env:
     BUILD_TYPE: Release
